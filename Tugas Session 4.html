@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Halaman HTML dengan CSS</title>
+    <style>
+        nav {
+            background: #C9BFBF;
+            grid-area: nav;
+        }
+        header {
+            background: #707070;
+            grid-area: header;
+            text-align: center;
+        }
+        section {
+            background: #ABABAB;
+            grid-area: section;
+        }
+        footer {
+            background: #707070;
+            grid-area: footer;
+            font-size: small;
+            text-align: center;
+        }
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav section section"
+                "footer footer footer";
+            grid-template-rows: 80px 1fr 50px;
+            grid-template-columns: 20% 1fr 18%;
+            grid-gap: 5px;
+            height: 100vh;
+            margin: 10px;
+        }
+        header, nav, section, footer {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Semantic</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pengertian">Pengertian</a></li>
+            <li><a href="#kesimpulan">Kesimpulan</a></li>
+        </ul>
+    </nav>
+    <section>
+        Konten
+
+Nama : Fahri Satria Budi
+NIM  : 2105101093
+Kelas: 5A
+    </section>
+    <footer>
+        Copyright
+    </footer>
+</body>
+</html>
